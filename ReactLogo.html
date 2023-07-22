@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React Logo</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background:#1e221f;
+      }
+
+      .container {
+        height: 100vh;
+        width: auto;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        /* border-radius: 50%; */
+        /* margin-top: 100px; */
+        background-image: radial-gradient(#1e221f, #122b19);
+      }
+      .middle_Ball {
+        position: absolute;
+        height: 60px;
+        width: 60px;
+        background-color: aqua;
+        border-radius: 50%;
+        /* background-image: radial-gradient(black,blue 10%,red ); */
+        border: 2px solid aqua;
+        box-shadow: 0 0 4em white;
+      }
+      
+      
+      .circle_1 {
+        position: absolute;
+        height: 150px;
+        width: 440px;
+        border-radius: 50%;
+        border: 13px solid aqua;
+        transform: rotateZ(0deg);
+        animation: circle_2 1000s infinite;
+      }
+      .circle_2 {
+        position: absolute;
+        height: 150px;
+        width: 440px;
+        border-radius: 50%;
+        border: 13px solid aqua;
+        transform: rotateZ(-60deg);
+        animation: circle_2 1000s infinite;
+      }
+      .circle_3 {
+        position: absolute;
+        height: 150px;
+        width: 440px;
+        border-radius: 50%;
+        border: 13px solid aqua;
+        transform: rotateZ(60deg);
+        animation: circle_3 1000s infinite;
+      }
+      @keyframes circle_2 {
+        to {
+          transform: rotate(100000deg);
+        }
+        /* 0% {
+          transform: rotate(40deg);
+        }
+        25% {
+          transform: rotate(95deg);
+        }
+        50% {
+          transform: rotate(160deg);
+        }
+        100% {
+          transform: rotate(315deg);
+        } */
+      }
+      @keyframes circle_3 {
+        to {
+          transform: rotate(100000deg);
+        }
+        /* 0% {
+          transform: rotate(-60deg);
+        }
+        25% {
+          transform: rotate(-120deg);
+        }
+        50% {
+          transform: rotate(-180deg);
+        }
+        100% {
+          transform: rotate(-340deg);
+        } */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="circle_1"></div>
+      <div class="circle_2"></div>
+      <div class="circle_3"></div>
+      <div class="middle_Ball"></div>
+    </div>
+  </body>
+</html>
